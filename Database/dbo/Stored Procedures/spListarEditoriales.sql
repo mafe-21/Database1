@@ -3,11 +3,7 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE spAgregarEditorial1
-	-- Add the parameters for the stored procedure here
-	@id int, 
-	@nombre varchar(45),
-	@sede varchar(45)
+CREATE PROCEDURE spListarEditoriales
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -15,5 +11,5 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	INSERT INTO editorial VALUES(@id, @nombre, @sede)
+	SELECT id, nombre, sede FROM editoriales ORDER BY nombre asc
 END

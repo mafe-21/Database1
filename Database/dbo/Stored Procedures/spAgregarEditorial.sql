@@ -7,7 +7,8 @@ CREATE PROCEDURE spAgregarEditorial1
 	-- Add the parameters for the stored procedure here
 	@id int, 
 	@nombre varchar(45),
-	@sede varchar(45)
+	@sede varchar(45),
+	@user int
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -15,5 +16,5 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	INSERT INTO editorial VALUES(@id, @nombre, @sede)
+	INSERT INTO editorial VALUES(@id, @nombre, @sede, @user)
 END
