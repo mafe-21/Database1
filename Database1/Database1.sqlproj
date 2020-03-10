@@ -62,6 +62,7 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="dbo\Views" />
+    <Folder Include="dbo\Functions\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\autores.sql" />
@@ -72,5 +73,7 @@
     <Build Include="dbo\Stored Procedures\spAgregarEditorial.sql" />
     <Build Include="dbo\Stored Procedures\spListarEditoriales.sql" />
     <Build Include="dbo\Views\Editoriales.sql" />
+    <Build Include="dbo\Tables\log_auditoria.sql" />
+    <Build Include="dbo\Functions\promedioValorLibroPorEditorial.sql" />
   </ItemGroup>
 </Project>
