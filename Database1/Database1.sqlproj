@@ -61,6 +61,7 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\autores.sql" />
@@ -70,5 +71,6 @@
     <Build Include="dbo\Stored Procedures\spAgregarLibro.sql" />
     <Build Include="dbo\Stored Procedures\spAgregarEditorial.sql" />
     <Build Include="dbo\Stored Procedures\spListarEditoriales.sql" />
+    <Build Include="dbo\Views\Editoriales.sql" />
   </ItemGroup>
 </Project>
